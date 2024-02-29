@@ -27,10 +27,21 @@
         <img src="./images/logo.svg" alt="logo" class="nav__logo-img">
       </div>
       <div class="nav__list">
-        <li class="nav__item">About</li>
-        <li class="nav__item">Services</li>
-        <li class="nav__item">Projects</li>
-        <li class="nav__item">Contact</li>
+        <li class="nav__item">
+          <a href="" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Contact</a>
+        </li>
+      </div>
+      <div class="nav__menu">
+        <img src="./images/icon-hamburger.svg" alt="menu">
       </div>
     </nav>
 
@@ -53,15 +64,15 @@
         <a href="#" class="about__link about__link--1">Learn more</a>
       </div>
 
-      <div class="about__item">
+      <div class="about__item about__item--2">
         <img src="./images/desktop/image-transform.jpg" alt="egg on yellow background" class="about__img">
       </div>
 
-      <div class="about__item">
+      <div class="about__item about__item--3">
         <img src="./images/desktop/image-stand-out.jpg" alt="egg on yellow background" class="about__img">
       </div>
 
-      <div class="about__item about__item--1">
+      <div class="about__item about__item--4">
         <h2 class="heading-2">Stand out to the right audience</h2>
         <p class="paragraph paragraph--1">
           Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll
@@ -133,18 +144,22 @@
     </section>
 
     <section class="projects">
-      <div class="projects__img">
+      <picture class="projects__img">
+        <source media="(max-width: 600px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
         <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles">
-      </div>
-      <div class="projects__img">
+      </picture>
+      <picture class="projects__img">
+        <source media="(max-width: 600px)" srcset="./images/mobile/image-gallery-orange.jpg">
         <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
-      </div>
-      <div class="projects__img">
+      </picture>
+      <picture class="projects__img">
+        <source media="(max-width: 600px)" srcset="./images/mobile/image-gallery-cone.jpg">
         <img src="./images/desktop/image-gallery-cone.jpg" alt="biscuit cone">
-      </div>
-      <div class="projects__img">
+      </picture>
+      <picture class="projects__img">
+        <source media="(max-width: 600px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
         <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes">
-      </div>
+      </picture>
     </section>
   </main>
 
@@ -153,9 +168,15 @@
       <img src="./images/logo-new.svg" alt="logo">
     </div>
     <div class="footer__list">
-      <li class="footer__item">About</li>
-      <li class="footer__item">Services</li>
-      <li class="footer__item">Projects</li>
+      <li class="footer__item">
+        <a href="" class="footer__link">About</a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">Services</a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">Projects</a>
+      </li>
     </div>
 
     <div class="footer__social-icon">
@@ -174,11 +195,7 @@
     </div>
   </footer>
 
-  <!--About
-  Services
-  Projects
-  Contact
-
+  <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
