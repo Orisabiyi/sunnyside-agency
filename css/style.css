@@ -457,8 +457,9 @@ body {
   gap: 3rem;
 }
 
-.footer__icon:hover img {
-  filter: invert(.5) saturate(50%);
+.footer__icon:hover path {
+  fill: #fff;
+  transition: all .5s;
 }
 
 .heading-1 {
