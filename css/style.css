@@ -1,6 +1,7 @@
 :root {
   /* Primary Color */
   --primary-red: hsla(7, 99%, 70%, 0.471);
+  --primary-red--1: hsl(7, 99%, 70%);
   --primary-yellow: hsla(51, 100%, 49%, 0.437);
   --primary-yellow--1: hsl(51, 100%, 49%);
   --primary-cyan--1: hsl(167, 40%, 24%);
@@ -280,6 +281,18 @@ body {
 
 .about__link--2::after {
   background-color: var(--primary-red);
+}
+
+.about__link:hover::after {
+  transition: all .7s;
+}
+
+.about__link--1:hover::after {
+  background-color: var(--primary-yellow--1);
+}
+
+.about__link--2:hover::after {
+  background-color: var(--primary-red--1);
 }
 
 @media only screen and (max-width: 31.25em) {
