@@ -113,7 +113,8 @@ body {
 
     padding: 8rem;
     width: 90%;
-    gap: 6rem;
+    height: auto;
+    gap: 7rem;
 
     position: absolute;
     transform: translateX(-50%);
@@ -128,7 +129,6 @@ body {
     top: 2%;
     left: 50%;
     transition: all 2s ease;
-    /* clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 100%, 0 100%); */
   }
 
   .nav__item {
@@ -369,6 +369,7 @@ body {
 @media only screen and (max-width: 31.25em) {
   .clients {
     padding: 10rem 5rem;
+    gap: 13rem;
   }
 }
 
@@ -398,6 +399,7 @@ body {
 @media only screen and (max-width: 31.25em) {
   .clients__container {
     flex-direction: column;
+    gap: 10rem;
   }
 }
 
@@ -507,7 +509,7 @@ body {
 
 @media only screen and (max-width: 31.25em) {
   .footer {
-    padding: 8rem 4rem;
+    padding: 6rem 3rem;
     gap: 6rem;
   }
 
@@ -521,6 +523,11 @@ body {
 
   .footer__item {
     flex: 1;
+  }
+
+  .footer__social-icon {
+    width: 100%;
+    gap: 6rem;
   }
 }
 
