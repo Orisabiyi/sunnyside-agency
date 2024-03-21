@@ -54,21 +54,22 @@ body {
 }
 
 .header {
+  position: relative;
   background: url(../images/desktop/image-header.jpg) no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 
   color: var(--color-white);
-  min-height: 70rem;
+  min-height: 65.5rem;
   padding: 4rem;
 }
 
 @media only screen and (max-width: 31.25em) {
   .header {
-    min-height: 100rem;
     background: url(../images/mobile/image-header.jpg) no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
+    min-height: 100vh;
   }
 }
 
@@ -86,7 +87,7 @@ body {
 
 @media only screen and (max-width: 31.25em) {
   .nav__logo {
-    width: 25rem;
+    width: 40%;
   }
 }
 
@@ -127,9 +128,11 @@ body {
     display: flex;
     opacity: 1;
 
-    top: 2%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 2s ease;
+    z-index: 1;
   }
 
   .nav__item {
@@ -168,6 +171,7 @@ body {
 @media only screen and (max-width: 31.25em) {
   .nav__menu {
     display: block;
+    z-index: 2;
   }
 
   .nav__item:last-child {
@@ -183,20 +187,18 @@ body {
 }
 
 .header__main {
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 7rem;
+  gap: 3rem;
 
   width: 100%;
-  margin-top: 8%;
   text-align: center;
-}
 
-@media only screen and (max-width: 31.25em) {
-  .header__main {
-    margin-top: 25%;
-  }
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__arrow {
