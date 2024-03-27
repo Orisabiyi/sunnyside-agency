@@ -60,7 +60,8 @@ body {
   background-size: cover;
 
   color: var(--color-white);
-  min-height: 65.5rem;
+  height: 100vh;
+  min-height: 65rem;
   padding: 4rem;
 }
 
@@ -69,7 +70,7 @@ body {
     background: url(../images/mobile/image-header.jpg) no-repeat;
     background-position: bottom;
     background-size: cover;
-    min-height: 100vh;
+    height: 80vh;
   }
 }
 
@@ -206,8 +207,13 @@ body {
 }
 
 @media only screen and (max-width: 31.25em) {
+  .header__main {
+    height: 30%;
+    top: 36%;
+  }
+
   .header__arrow {
-    height: 25rem;
+    height: 50%;
   }
 }
 
