@@ -70,7 +70,7 @@ body {
     background: url(../images/mobile/image-header.jpg) no-repeat;
     background-position: bottom;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
   }
 }
 
@@ -209,7 +209,7 @@ body {
 @media only screen and (max-width: 31.25em) {
   .header__main {
     height: 30%;
-    top: 36%;
+    top: 28%;
   }
 
   .header__arrow {
