@@ -10,5 +10,3 @@ const toggleNavBar = function (e) {
 }
 
 navBar.addEventListener('click', toggleNavBar)
-
-console.log(true);
